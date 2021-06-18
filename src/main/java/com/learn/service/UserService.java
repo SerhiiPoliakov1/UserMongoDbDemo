@@ -1,15 +1,15 @@
-package service;
+package com.learn.service;
 
 
-import entity.User;
+import com.learn.entity.User;
 import io.grpc.stub.StreamObserver;
+import net.devh.boot.grpc.server.service.GrpcService;
 import org.example.grpc.UserOuterClass;
 import org.example.grpc.userGrpc;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import repository.UserRepository;
+import com.learn.repository.UserRepository;
 
-@Service
+@GrpcService
 public class UserService extends userGrpc.userImplBase {
 
     @Autowired

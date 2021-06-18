@@ -41,7 +41,7 @@ public final class userGrpc {
     if ((getFindUserByIdMethod = userGrpc.getFindUserByIdMethod) == null) {
       synchronized (userGrpc.class) {
         if ((getFindUserByIdMethod = userGrpc.getFindUserByIdMethod) == null) {
-          userGrpc.getFindUserByIdMethod = getFindUserByIdMethod = 
+          userGrpc.getFindUserByIdMethod = getFindUserByIdMethod =
               io.grpc.MethodDescriptor.<org.example.grpc.UserOuterClass.UserIdRequest, org.example.grpc.UserOuterClass.UserResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
@@ -73,7 +73,7 @@ public final class userGrpc {
     if ((getCreateMethod = userGrpc.getCreateMethod) == null) {
       synchronized (userGrpc.class) {
         if ((getCreateMethod = userGrpc.getCreateMethod) == null) {
-          userGrpc.getCreateMethod = getCreateMethod = 
+          userGrpc.getCreateMethod = getCreateMethod =
               io.grpc.MethodDescriptor.<org.example.grpc.UserOuterClass.UserRequest, org.example.grpc.UserOuterClass.UserResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
@@ -105,7 +105,7 @@ public final class userGrpc {
     if ((getGetAllUsersMethod = userGrpc.getGetAllUsersMethod) == null) {
       synchronized (userGrpc.class) {
         if ((getGetAllUsersMethod = userGrpc.getGetAllUsersMethod) == null) {
-          userGrpc.getGetAllUsersMethod = getGetAllUsersMethod = 
+          userGrpc.getGetAllUsersMethod = getGetAllUsersMethod =
               io.grpc.MethodDescriptor.<org.example.grpc.UserOuterClass.Empty, org.example.grpc.UserOuterClass.AllUsersResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
@@ -137,7 +137,7 @@ public final class userGrpc {
     if ((getUpdateMethod = userGrpc.getUpdateMethod) == null) {
       synchronized (userGrpc.class) {
         if ((getUpdateMethod = userGrpc.getUpdateMethod) == null) {
-          userGrpc.getUpdateMethod = getUpdateMethod = 
+          userGrpc.getUpdateMethod = getUpdateMethod =
               io.grpc.MethodDescriptor.<org.example.grpc.UserOuterClass.UserRequest, org.example.grpc.UserOuterClass.UserResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
@@ -169,7 +169,7 @@ public final class userGrpc {
     if ((getDeleteMethod = userGrpc.getDeleteMethod) == null) {
       synchronized (userGrpc.class) {
         if ((getDeleteMethod = userGrpc.getDeleteMethod) == null) {
-          userGrpc.getDeleteMethod = getDeleteMethod = 
+          userGrpc.getDeleteMethod = getDeleteMethod =
               io.grpc.MethodDescriptor.<org.example.grpc.UserOuterClass.UserIdRequest, org.example.grpc.UserOuterClass.UserResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
@@ -188,14 +188,14 @@ public final class userGrpc {
   }
 
   /**
-   * Creates a new async stub that supports all call types for the service
+   * Creates a new async stub that supports all call types for the com.learn.service
    */
   public static userStub newStub(io.grpc.Channel channel) {
     return new userStub(channel);
   }
 
   /**
-   * Creates a new blocking-style stub that supports unary and streaming output calls on the service
+   * Creates a new blocking-style stub that supports unary and streaming output calls on the com.learn.service
    */
   public static userBlockingStub newBlockingStub(
       io.grpc.Channel channel) {
@@ -203,7 +203,7 @@ public final class userGrpc {
   }
 
   /**
-   * Creates a new ListenableFuture-style stub that supports unary calls on the service
+   * Creates a new ListenableFuture-style stub that supports unary calls on the com.learn.service
    */
   public static userFutureStub newFutureStub(
       io.grpc.Channel channel) {
