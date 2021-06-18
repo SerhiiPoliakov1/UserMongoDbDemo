@@ -1,0 +1,36 @@
+syntax = "proto3";
+option java_package = "org.example.grpc";
+
+service user {
+
+  rpc findUserById(UserIdRequest) returns (UserResponse);
+  rpc create(UserRequest) returns (UserResponse);
+  rpc getAllUsers(Empty) returns (AllUsersResponse);
+  rpc update(UserRequest) returns (UserResponse);
+  rpc delete(UserIdRequest) returns (UserResponse);
+}
+
+message UserIdRequest {
+  int32 id =1;
+}
+message UserRequest{
+  User user =1;
+}
+
+message UserResponse{
+  User user =1;
+}
+
+message AllUsersResponse{
+  repeated User user =1;
+}
+
+message User{
+  int32 id =1;
+  string username =2;
+  string email =3;
+}
+
+message Empty{
+
+}
